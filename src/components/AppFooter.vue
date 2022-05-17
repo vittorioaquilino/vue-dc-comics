@@ -52,12 +52,18 @@
               <img src="../assets/img/dc-logo-bg.png" alt="">
           </div>
       </div>
-      <div class="footer__container-bottom">
-          <div class="container">
-              <div class="footer__button">
-              <a href="">sign up now</a>
-              </div>
-          </div>
+      <div class="footer__container-bottom container">
+        <div class="footer__button">
+            <a href="">sign-up now!</a>
+        </div>
+        <div class="footer__social">
+            <span>follow us</span>
+            <img src="../assets/img/footer-facebook.png" alt="">
+            <img src="../assets/img/footer-periscope.png" alt="">
+            <img src="../assets/img/footer-pinterest.png" alt="">
+            <img src="../assets/img/footer-twitter.png" alt="">
+            <img src="../assets/img/footer-youtube.png" alt="">
+        </div>
     </div>
   </footer>
 </template>
@@ -242,12 +248,10 @@ export default {
         border: 2px solid lightgreen;
         background-color: $brand-footer-color;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        align-items: center;
     }
 
-    &__button {
-        
-    }
 }
 
 .footer__menu {
@@ -255,7 +259,6 @@ export default {
     display: flex;
     flex-wrap: wrap;
     padding-top: 1.5rem;
-
 }
 
 .footer__list {
@@ -275,5 +278,30 @@ export default {
     }
 }
 
+.footer__button {
+        
+        a {
+            color: white;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: .8rem;
+            border: 2px solid $brand-primary-color;
+            padding: .7rem;
+        }
+}
+
+.footer__social {
+
+    span {
+        text-transform: uppercase;
+        color: $brand-primary-color;
+        margin-right: .5rem;
+    }
+
+    img {
+        width: 25px;
+        margin: 0 .6rem;
+    }
+}
 
 </style>
