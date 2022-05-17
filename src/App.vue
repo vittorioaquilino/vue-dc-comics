@@ -1,28 +1,38 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <!-- header -->
+    <AppHeader />
+    <!-- main -->
+  <main>
+    questo è il main
+    </main>
+    <div class="jumbotron">jumbo</div>
+    <!-- footer -->
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import AppHeader from "./components/AppHeader.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    AppHeader,
   },
 };
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import "./style/common.scss";
+
+main {
+  height: 100px;
+  background-color: black ;
+  color: white;
+}
+
+.jumbotron {
+  height: 100px;
+  background-color: #0082f9;
 }
 </style>
