@@ -88,7 +88,9 @@ export default {
 
 .header {
   height: 100px;
+  width: 100%;
   padding: 0.5rem;
+  background-color: white;
 
     &__logo {
         img {
