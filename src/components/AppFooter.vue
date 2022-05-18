@@ -245,7 +245,6 @@ export default {
     &__container-bottom {
         width: 100%;
         height: 80px;
-        border: 2px solid lightgreen;
         background-color: $brand-footer-color;
         display: flex;
         justify-content: space-around;

@@ -4,9 +4,11 @@
     <AppHeader />
     <!-- main -->
   <main>
-    questo è il main
-    </main>
-    <div class="jumbotron">jumbo</div>
+    <div class="container main__top">
+      --> Content goes here -->
+    </div>
+  </main>
+    <AppPreFooter />
     <!-- footer -->
     <AppFooter />
   </div>
@@ -15,12 +17,14 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
 import AppFooter from "./components/AppFooter.vue";
+import AppPreFooter from "./components/AppPreFooter.vue";
 
 export default {
   name: "App",
   components: {
     AppHeader,
     AppFooter,
+    AppPreFooter,
   },
 };
 </script>
@@ -32,10 +36,9 @@ main {
   height: 100px;
   background-color: black ;
   color: white;
+  display: flex;
+  align-items: center;
 }
 
-.jumbotron {
-  height: 100px;
-  background-color: #0082f9;
-}
+
 </style>
